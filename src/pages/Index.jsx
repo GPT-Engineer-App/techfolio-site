@@ -1,5 +1,5 @@
 import { Box, Container, Flex, Heading, Text, Link, Stack, Image, SimpleGrid, Icon, Input, Textarea, VStack, HStack, useColorModeValue, Button } from "@chakra-ui/react";
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaReact, FaNodeJs, FaDatabase } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaReact, FaNodeJs, FaDatabase, FaPython, FaPlug } from "react-icons/fa";
 
 const Index = () => {
   const bgColor = useColorModeValue("gray.100", "gray.900");
@@ -87,9 +87,17 @@ const Index = () => {
               </VStack>
               <VStack>
                 <Icon as={FaDatabase} w={10} h={10} />
-                <Text>Databases</Text>
+                <Text>Python & Kodi Addons</Text>
               </VStack>
               {/* Add more skills as needed */}
+              <VStack>
+                <Icon as={FaPython} w={10} h={10} />
+                <Text>Python</Text>
+              </VStack>
+              <VStack>
+                <Icon as={FaPlug} w={10} h={10} />
+                <Text>Kodi Addons</Text>
+              </VStack>
             </SimpleGrid>
           </Box>
 
